@@ -1,0 +1,66 @@
+
+
+.Working-card5 {
+  max-height: 500px !important;
+    background-color: transparent !important;
+    border-radius: 10px;
+    box-shadow: 0 2px 40px  rgba(0, 0, 0, 0.3) !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.Working-card5:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: linear-gradient(45deg, #8f7eff, #44a4ff);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.Working-card5:hover:before {
+  opacity: 0.5;
+}
+
+.Working-card5-content {
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -45%);
+  text-align: center;
+  color: rgb(0, 0, 0);
+  z-index: 1;
+  background-color: rgb(240, 236, 236);
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Working-card5-content span {
+  font-size: .9rem;
+  font-weight: 500;
+}
+
+.Working-card5:hover .Working-card5-content {
+  transform: translate(-50%, -50%);
+}
+
+.Working-p{
+  text-align: left;
+}
+.Working-h1 {
+  display: flex;
+  align-items: center;
+  font-size: 28px;
+}
+
+.Working-span {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 10px;
+}

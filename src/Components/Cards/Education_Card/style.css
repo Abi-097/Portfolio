@@ -1,0 +1,67 @@
+
+
+.education-card5 {
+    max-height: 500px !important;
+    background-color: transparent !important;
+    border-radius: 15px !important;
+    box-shadow: 0 2px 40px  rgba(0, 0, 0, 0.3) !important;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .education-card5:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: linear-gradient(45deg, #8f7eff, #44a4ff);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .education-card5:hover:before {
+    opacity: 0.5;
+  }
+  
+  .education-card5-content {
+  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    text-align: center;
+    color: rgb(0, 0, 0);
+    z-index: 1;
+    background-color: rgb(240, 236, 236);
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .education-card5-content span {
+    font-size: .9rem;
+    font-weight: 500;
+  }
+  
+  .education-card5:hover .education-card5-content {
+    transform: translate(-50%, -50%);
+  }
+  
+  .education-p{
+    text-align: left;
+  }
+  .education-h1 {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+  }
+  
+  .education-span {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
