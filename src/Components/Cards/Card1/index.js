@@ -4,7 +4,15 @@ import image from "../../../Assets/Images/fotor_2023-6-10_11_42_7.jpg"
 import { Card, CardContent } from '@mui/material';
 const CardOne = () => {
   return (
-    <Card sx={{ width:"60%", ml:2, maxHeight:"86%"}}>
+    <Card sx={{ width:"60%", ml:2, borderRadius:"10px",
+    height:{
+      xxl:"71.1%",
+      xl:"54%",
+      lg:"37%",
+      md:"16.2%",
+      sm:"85.9%",
+      xs:"76.4%"
+    }}}>
     <div className="card-container">
       <CardContent className="card" sx={{mb:1, p:0}}>
         <div className="img-content">

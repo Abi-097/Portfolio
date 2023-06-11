@@ -8,14 +8,16 @@ import Grid from '@mui/material/Grid';
 import CardOne from "../../Cards/Card1";
 import SocialLinks from "../../Social-Links";
 import { Card, CardContent, Typography } from "@mui/material";
-
-
+import html from "../../../Assets/Images/html.png"
+import css from "../../../Assets/Images/css.png"
+import js from "../../../Assets/Images/js.png"
+import boot from "../../../Assets/Images/bootstrap.png"
+import react from "../../../Assets/Images/react.png"
+import git from "../../../Assets/Images/github.png"
 
 export const CoverPage = () => {
     return (
         <div>
-         {/* <div className="backGround-overlay">
-         <div className="backGround-after_overlay"> */}
             <Navbar/>
             <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={1}>
@@ -25,7 +27,7 @@ export const CoverPage = () => {
         </Grid>
         <Grid item xs={12} s={12} md={4} lg={6}>
         {/* career object */}
-        <Card sx={{ background:"orange" }}>
+        <Card sx={{ background:"#fff3e0",mb:1,borderRadius:"15px" }}>
       <CardContent>
         <Typography gutterBottom variant="h4" component="div">
           Career Objective
@@ -37,7 +39,7 @@ export const CoverPage = () => {
       </CardContent>
     </Card>
     {/* me */}
-          <Card sx={{ background:"orange" }}>
+          <Card sx={{ background:"#fff3e0" ,borderRadius:"15px",mb:1 }}>
       <CardContent>
         <Typography gutterBottom variant="h4" component="div">
           About Me
@@ -58,6 +60,32 @@ export const CoverPage = () => {
         </Typography>
       </CardContent>
     </Card>
+    {/* career object */}
+    <Card sx={{ background:"#fff3e0",mb:1,borderRadius:"15px" }}>
+      <CardContent>
+        <Typography gutterBottom variant="h4" component="div">
+          Skills
+        </Typography>
+        <Typography variant="body1" color="text.primary">
+        <span><img src={html} width="55px" height="60px"/> &nbsp; &nbsp;</span> 
+        <span><img src={css} width="55px" height="60px"/> &nbsp; &nbsp;</span> 
+        <span><img src={js} width="60px" height="60px"/> &nbsp; &nbsp;</span> 
+        <span><img src={react} width="60px" height="60px"/> &nbsp; &nbsp;</span> 
+        <span><img src={boot} width="60px" height="60px"/> &nbsp; &nbsp;</span> 
+        <span><img src={git} width="55px" height="60px"/> &nbsp; &nbsp;</span> 
+        <ul>
+        <li>CRUD API development using Postman tool</li>
+        <li>Passion for generating clean, simple code that is easy to maintain, as well as a constantly attempt to learn new approaches and tools to implement them. 
+        Ordinary Level</li>
+        <li>Communication and Collaboration: Good communication skills, both verbal and written, 
+            are important for effective collaboration with team members, 
+            understanding project requirements, and presenting your work. Being a good team player is also valued.</li>
+        <li>Continuous Learning: Having a growth mindset and being open to learning new technologies, frameworks, and tools is crucial in the ever-evolving 
+            field of software engineering. Being proactive in staying updated with industry trends and advancements is beneficial.</li>
+</ul>
+        </Typography>
+      </CardContent>
+    </Card>
         </Grid>
       </Grid>
     </Box>
@@ -65,7 +93,7 @@ export const CoverPage = () => {
     // </div> */}
    
     {/* 
-    <h1>Other Certification</h1>
+    
     <h1>Extra-Activities</h1>     */}
     
         </div>

@@ -5,6 +5,8 @@ import React from 'react';
 import Working from './Components/Pages/Work';
 import Education from './Components/Pages/Education';
 import MiniProjects from './Components/Pages/Mini_projects';
+import Certificates from './Components/Pages/Certificates';
+import Extra from './Components/Pages/Extra';
 function App() {
   return (
     <div>
@@ -14,7 +16,9 @@ function App() {
     <CoverPage/>
     <Working/>
     <Education/>
+    <Certificates/>
     <MiniProjects/>
+    <Extra/>
     </div>
     </div>
     </div>
