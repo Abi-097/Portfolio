@@ -17,8 +17,8 @@ import git from "../../../Assets/Images/github.png"
 
 export const CoverPage = () => {
     return (
-        <div>
-            <Navbar/>
+        <div><h1 className="cover-h1"> Portfolio</h1>
+         <Navbar/>
             <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={1}>
         <Grid item xs={12} s={12} md={5} lg={5} >
