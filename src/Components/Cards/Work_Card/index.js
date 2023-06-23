@@ -5,7 +5,6 @@ import { styled } from '@mui/system';
 
 const StyledCard = styled(Card)(({ theme }) => ({
   boxSizing: 'border-box',
-  // maxWidth:'390px',
   width: '100%',
   height: '100%',
   background: 'transparent',
