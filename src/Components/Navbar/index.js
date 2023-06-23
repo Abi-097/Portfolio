@@ -1,22 +1,18 @@
 import * as React from 'react';
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
-import FormControl from '@mui/material/FormControl';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import FormLabel from '@mui/material/FormLabel';
-import Radio from '@mui/material/Radio';
-import RadioGroup from '@mui/material/RadioGroup';
-import Switch from '@mui/material/Switch';
 import SpeedDial from '@mui/material/SpeedDial';
 import SpeedDialIcon from '@mui/material/SpeedDialIcon';
 import SpeedDialAction from '@mui/material/SpeedDialAction';
-import FileCopyIcon from '@mui/icons-material/FileCopyOutlined';
-import SaveIcon from '@mui/icons-material/Save';
-import PrintIcon from '@mui/icons-material/Print';
-import ShareIcon from '@mui/icons-material/Share';
-
+import HomeWorkIcon from '@mui/icons-material/HomeWork';
+import SchoolIcon from '@mui/icons-material/School';
+import CardMembershipIcon from '@mui/icons-material/CardMembership';
+import AccountTreeIcon from '@mui/icons-material/AccountTree';
+import ColorizeIcon from '@mui/icons-material/Colorize';
+// import { useNavigate } from 'react-router-dom';
+import Working from '../Pages/Work';
 const StyledSpeedDial = styled(SpeedDial)(({ theme }) => ({
-  position: 'absolute',
+  position: 'relative',
   '&.MuiSpeedDial-directionUp, &.MuiSpeedDial-directionLeft': {
     bottom: theme.spacing(2),
     right: theme.spacing(2),
@@ -27,16 +23,21 @@ const StyledSpeedDial = styled(SpeedDial)(({ theme }) => ({
   },
 }));
 
+
+
 const actions = [
-  { icon: <FileCopyIcon />, name: 'Copy' },
-  { icon: <SaveIcon />, name: 'Save' },
-  { icon: <PrintIcon />, name: 'Print' },
-  { icon: <ShareIcon />, name: 'Share' },
+  { icon: <HomeWorkIcon />, name: 'Working Experience'},
+  { icon: <SchoolIcon />, name: 'Education Experience' },
+  { icon: <CardMembershipIcon />, name: 'Certification Experience' },
+  { icon: <AccountTreeIcon />, name: 'Projects' },
+  { icon: <ColorizeIcon />, name: 'Extra' },
 ];
 
 export default function PlaygroundSpeedDial() {
   const [direction, setDirection] = React.useState('right');
   const [hidden, setHidden] = React.useState(false);
+
+  // const navigate = useNavigate();
 
   const handleDirectionChange = (event) => {
     setDirection(event.target.value);

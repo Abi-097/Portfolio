@@ -74,7 +74,7 @@ export const CoverPage = () => {
         <span><img src={boot} width="60px" height="60px"/> &nbsp; &nbsp;</span> 
         <span><img src={git} width="55px" height="60px"/> &nbsp; &nbsp;</span> 
         <ul>
-        <li>CRUD API development using Postman tool</li>
+        <li>CRUD API development with Postman tool</li>
         <li>Passion for generating clean, simple code that is easy to maintain, as well as a constantly attempt to learn new approaches and tools to implement them. 
         Ordinary Level</li>
         <li>Communication and Collaboration: Good communication skills, both verbal and written, 
