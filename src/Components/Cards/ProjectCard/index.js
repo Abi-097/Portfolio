@@ -1,30 +1,50 @@
-import { Grid } from '@mui/material';
 import React from 'react';
-// import * as React from 'react';
-import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
 import "./style.css"
+import { styled } from '@mui/system';
+
+const StyledCard = styled(Card)(({ theme }) => ({
+  boxSizing: 'border-box',
+  width: '100%',
+  height: '100%',
+  background: 'transparent',
+  border: '1px solid white',
+  boxShadow: '12px 17px 51px rgba(0, 0, 0, 0.22)',
+  backdropFilter: 'blur(6px)',
+  borderRadius: '17px',
+  textAlign: 'center',
+  cursor: 'pointer',
+  transition: 'all 0.5s',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  userSelect: 'none',
+  fontWeight: 'bolder',
+  color: 'black',
+  marginLeft: '12px',
+  '&:hover': {
+    border: '1px solid black',
+    transform: 'scale(1.05)',
+  },
+
+  '&:active': {
+    transform: 'scale(0.95) rotateZ(1.7deg)',
+  },
+}));
 
 const ProjectCard = ({item}) => {
     return (
     
-
-                <Card className="Project-card" sx={{ maxWidth: 400 , height: "450px", ml:2, borderRadius:4}}>
+<div>
+  <StyledCard>
       <CardContent>
-     
-          <div className="Project-card-img"> <img src={item.image} alt="Image" width="100%" height="100%"/> 
-          </div>
-  <Box className="Project-card-info">
-    <p className="Project-title">{item.name}</p>
-    {/* <p className="Project-subtitle"></p> */}
-  </Box>
-      </CardContent>
-
-    </Card>
+          <img src={item.image} alt="Image" width="100%" height="250px"/>
+          <label className="label">{item.name}</label>
+        </CardContent>
+        
+    </StyledCard>
+</div>
     );
 }
 

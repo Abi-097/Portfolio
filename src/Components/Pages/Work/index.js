@@ -16,7 +16,6 @@ const data=[
       </ul>]
     },
 
-    
 ]
 
 function Working() {

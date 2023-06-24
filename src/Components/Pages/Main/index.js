@@ -1,9 +1,7 @@
 import "./style.css"    
 import React from "react"
 import Navbar from "../../Navbar";
-import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import CardOne from "../../Cards/Card1";
 import SocialLinks from "../../Social-Links";
@@ -18,16 +16,36 @@ import git from "../../../Assets/Images/github.png"
 export const CoverPage = () => {
     return (
         <div><h1 className="cover-h1"> Portfolio</h1>
-         <Navbar/>
+  
+     
+         {/* <Navbar/> */}
+  
             <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={1}>
         <Grid item xs={12} s={12} md={5} lg={5} >
-          <CardOne/>
-        <SocialLinks/>
+       
         </Grid>
         <Grid item xs={12} s={12} md={4} lg={6}>
         {/* career object */}
-        <Card sx={{ background:"#fff3e0",mb:1,borderRadius:"15px" }}>
+       
+    {/* me */}
+        
+    {/* career object */}
+   
+        </Grid>
+      </Grid>
+    </Box>
+
+
+{/* -- */}
+<Grid container spacing={2}>
+      <Grid item xs={12} s={12} md={4} lg={4}>
+       {/* left */}
+      <CardOne/>
+      <SocialLinks/>
+      </Grid>
+      <Grid item xs={12} s={12} md={6} lg={6}>
+      <Card sx={{ background:"#fff3e0",mb:1,borderRadius:"15px" }}>
       <CardContent>
         <Typography gutterBottom variant="h4" component="div">
           Career Objective
@@ -38,8 +56,8 @@ export const CoverPage = () => {
         </Typography>
       </CardContent>
     </Card>
-    {/* me */}
-          <Card sx={{ background:"#fff3e0" ,borderRadius:"15px",mb:1 }}>
+
+    <Card sx={{ background:"#fff3e0" ,borderRadius:"15px",mb:1 }}>
       <CardContent>
         <Typography gutterBottom variant="h4" component="div">
           About Me
@@ -60,8 +78,9 @@ export const CoverPage = () => {
         </Typography>
       </CardContent>
     </Card>
-    {/* career object */}
-    <Card sx={{ background:"#fff3e0",mb:1,borderRadius:"15px" }}>
+      </Grid>
+      <Grid item xs={12} s={12} md={6} lg={12}>
+      <Card sx={{ background:"#fff3e0",mb:1,borderRadius:"15px",mt:6, ml:1,mr:1 }}>
       <CardContent>
         <Typography gutterBottom variant="h4" component="div">
           Skills
@@ -86,15 +105,8 @@ export const CoverPage = () => {
         </Typography>
       </CardContent>
     </Card>
-        </Grid>
       </Grid>
-    </Box>
-    {/* // </div>
-    // </div> */}
-   
-    {/* 
-    
-    <h1>Extra-Activities</h1>     */}
+    </Grid>
     
         </div>
     );

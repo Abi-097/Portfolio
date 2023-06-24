@@ -1,6 +1,6 @@
 import React from 'react';
 import ExtraCard from '../../Cards/ExtraCard';
-import { Stack } from '@mui/material';
+import { Grid } from '@mui/material';
 const Extra = () => {
     const data =[{
         institute: "S.Thomas College, Mount Lavinia",
@@ -20,17 +20,17 @@ const Extra = () => {
 }]
     return (
         <div>
-            <h1>Extra </h1>
-            <Stack 
-  direction={{ xs: 'column', sm: 'column', l:'column', xl:'row'}}
-  spacing={{ xs: 1, sm: 2, md: 4,l:2, xl:2 }}
->
-            {data.map((item) => (
+            <h1 className='Work-h1'>Extras </h1>
 
-            <ExtraCard item={item}/>
-            
-            ))}
-            </Stack>
+            <Grid container spacing={1}>
+ {data.map((item) => (
+  <Grid item lg={3} md={4} sm={6} xs={12} >
+  <ExtraCard item={item} className="ExtraCard"/>
+  </Grid>
+ 
+      ))}
+  </Grid>
+  <br/>
         </div>
     );
 }

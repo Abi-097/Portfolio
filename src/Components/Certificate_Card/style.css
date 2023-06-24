@@ -1,6 +1,6 @@
-.Certificate-card{
-    flex: 1 !important;}
 
-    .Certificate-title{
-        margin-right: 25px;
+    .label{
+        font-size: 15px !important;
+        color: #080808;
+        text-decoration: none !important;
     }
