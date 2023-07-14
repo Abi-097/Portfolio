@@ -1,6 +1,7 @@
 import React from 'react';
 import ExtraCard from '../../Cards/ExtraCard';
 import { Grid } from '@mui/material';
+
 const Extra = () => {
     const data =[{
         institute: "S.Thomas College, Mount Lavinia",

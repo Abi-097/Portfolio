@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./style.css"
-import { Card, CardContent } from '@mui/material';
+import { Button, Card, CardContent, Dialog, DialogActions, DialogContent, } from '@mui/material';
 import { styled } from '@mui/system';
 
 const StyledCard = styled(Card)(({ theme }) => ({
@@ -32,16 +32,37 @@ const StyledCard = styled(Card)(({ theme }) => ({
   },
 }));
 const CertificateCard = ({item}) => {
+  const [open, setOpen] = useState (false);
+
+  const handleOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
+
     return ( 
 <div>
-  <StyledCard>
+  <StyledCard onClick={handleOpen}>
       <CardContent>
-          <img src={item.image} alt="Image" width="100%" height="100%"/> 
+          <img src={item.image} alt="Image" width="340px" height="200px"/> 
           <label className="label">{item.name}</label>
         </CardContent>
         
     </StyledCard>
     
+    <Dialog open={open} onClose={handleClose} maxWidth="lg">
+        <DialogContent>
+          
+          <img src={item.image} alt="Image" width="700px" height="500px"/> 
+        
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={handleClose} color="primary">Close</Button>
+        </DialogActions>
+      </Dialog>
 </div>
     );
 }

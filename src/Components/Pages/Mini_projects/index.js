@@ -1,9 +1,7 @@
 import React from 'react';
 import ProjectCard from '../../Cards/ProjectCard';
-import nic from "../../../Assets/Images/nic.JPG";
-import qa from "../../../Assets/Images/qa.JPG";
-import cv from "../../../Assets/Images/cv.JPG";
-import imdb from "../../../Assets/Images/imdb.JPG";
+import { nic, qa, cv, imdb } from '../../../util';
+
 import { Grid } from '@mui/material';
 import "./style.css";
 const MiniProjects = () => {

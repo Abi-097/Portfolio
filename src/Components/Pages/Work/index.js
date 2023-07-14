@@ -2,9 +2,11 @@ import React from 'react';
 import "./style.css"
 import WorkCard from '../../Cards/Work_Card';
 import { Grid, Stack } from '@mui/material';
+import { info } from '../../../util';
+// import info from "../../../util"
 const data=[
     {company: "Infomate Pvt Ltd - John Keells Holdings",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTfDb9pbjEZxcRTNr30c5vJnPQYBYWuVcmUNxHLkM86w&s",
+      image: info,
      position: "Process Associate",
      experience: "2021 - Current",
      description: [
@@ -20,7 +22,7 @@ const data=[
 
 function Working() {
   return (
-<div>
+<div className='Work-h1Customized'>
 <h1 className='Work-h1'>Working Experience</h1>
 
  <Grid container spacing={1}>

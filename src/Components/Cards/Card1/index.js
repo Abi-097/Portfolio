@@ -1,10 +1,8 @@
 import "./style.css"
-import image from "../../../Assets/Images/fotor_2023-6-10_11_42_7.jpg"
 import React from 'react';
 import { Card, Typography } from '@mui/material';
 import { styled } from '@mui/system';
-
-
+import { myself } from "../../../util";
 
 const CustomCard = styled(Card)(({ theme }) => ({
   position: 'relative',
@@ -50,7 +48,6 @@ const CustomCard = styled(Card)(({ theme }) => ({
     textAlign: 'center',
     gap: '10px',
     color:' #e8e8e8',
-    /* padding: 20px; */
     lineHeight: 1.5,
     borderRadius: '5px',
     opacity: 0,
@@ -81,9 +78,9 @@ const CustomCard = styled(Card)(({ theme }) => ({
 const CardOne = () => {
   return (
  
-    <CustomCard>
+    <CustomCard sx={{ml:1}}>
     <div className="img-content">
-    <img src={image} width="100%" height="100%"/>
+    <img src={myself} width="100%" height="100%"/>
     </div>
     <div className="content">
       <Typography variant="h6" component="p" className="heading">

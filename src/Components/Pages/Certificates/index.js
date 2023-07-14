@@ -1,9 +1,10 @@
-import {Grid } from "@mui/material";
-import React from "react";
+import { Grid } from "@mui/material";
+import React, { useState } from "react";
 import "./style.css";
 import CertificateCard from "../../Certificate_Card";
-import image from "../../../Assets/Images/Certificate.jpg";
-const data = [{ image: image, name: "Advanced Web Application" }];
+import { APWD } from "../../../util";
+
+const data = [{ image: APWD, name: "Advanced Web Application" }];
 const Certificates = () => {
   return (
     <div>
