@@ -2,13 +2,28 @@ import React from 'react';
 import "./style.css"
 import WorkCard from '../../Cards/Work_Card';
 import { Grid, Stack } from '@mui/material';
-import { info } from '../../../util';
+import { info,HotCat } from '../../../util';
 // import info from "../../../util"
 const data=[
+  {company: "HotCat Technologies Pvt Ltd",
+      image: HotCat,
+     position: "Training Front- End Developer (ReactJS)",
+     experience: "May 2023 - July 2023",
+     description: [
+      <ul>
+        <li>Created visually appealing and user-friendly responsive UI using HTML, CSS, JS and ReactJS.</li>
+        <li>Proficient in ReactJS for performing API CRUD operations.</li>
+        <li>Collaborated with cross-functional teams to ensure seamless integration of front-endcomponents.</li>
+        <li>Familiar with modern front-end frameworks and libraries such as Bootstrap, MUI.</li>
+        <li>Contributed to the development of interactive web applications.</li>
+        <li>Worked on real-world projects to gain practical experience - Adiya Admin Panel - Restaurant.</li>
+      </ul>]
+    },
+    
     {company: "Infomate Pvt Ltd - John Keells Holdings",
       image: info,
      position: "Process Associate",
-     experience: "2021 - Current",
+     experience: "2021 - 2023",
      description: [
       <ul>
         <li>Entering customer and account data from source documents within time limits.</li>
@@ -17,6 +32,7 @@ const data=[
         <li>Checking out the mails and processing as their requirements.</li>
       </ul>]
     },
+    
 
 ]
 

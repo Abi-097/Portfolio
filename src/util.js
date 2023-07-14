@@ -20,3 +20,4 @@ export const imdb = require('./Assets/Images/imdb.JPG');
 
 // work
 export const info = require('./Assets/Images/info.png');
+export const HotCat = require('./Assets/Images/hotcat.png');
